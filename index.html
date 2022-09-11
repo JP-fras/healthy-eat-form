@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="urf-8"
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="h1title">Healthy eating habits Survey Form</h1>
+      <p id="description" class="pdescription">Complete this survey about your daily eating habits</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" ><p>Name</p></label>
+          <input class="form-control" id="name" type="text" placeholder="Enter your name" required >
+      </div>
+      <div class="form-group">
+        <label id="email-label" ><p>Email</p></label>
+        <input class="form-control" id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" ><p>Age</p></label>
+        <input class="form-control" id="number" type="number" placeholder="Age" min="16" max="120">
+      </div>
+      <div class="form-group">
+        <p>Which of these type of food do you eat more often?</p>
+        <select type="dropdown" id="dropdown" class="form-group">
+          <option value="meat">Meat</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="fruits">Fruits</option>
+          <option value="grains">Grains, Beans, Nuts, etc.</option>
+          <option value="fish">Fish and Sea Food</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <fieldset>
+        <p>Do you think that you drink enough water?</p>
+        <label>
+          <input type="radio" name="drinkwater" value="yes-a-lot" class="input-radio" checked>Yes, I drink at least 2L per day
+        </label>
+        <label>
+          <input type="radio" name="drinkwater" value="not-enough" class="input-radio">Not enough
+        </label>
+        <label>
+          <input type="radio" name="drinkwater" value="no-drink-water" class="input-radio">I don't usually drink water
+          </label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+        <p>How often do you eat?</p>
+        <label>
+          <input name="times-eat" type="checkbox" value="breakfast">Breakfast
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="midmorning">Mid Morning
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="lunch">Lunch
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="midafternoon">Mid Afternoon
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="afternoon">Afternoon
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="dinner">Dinner
+        </label>
+        <label>
+          <input name="times-eat" type="checkbox" value="postdinner">Post Dinner
+        </label>
+        </fieldset>
+        <div class="form-group">
+          <p>Any additional information about your eating habits?</p>
+          <textarea id="add-info" class="input-textarea" name="add-info" placeholder="Enter any additional information you want"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" id="submit" class="submit-buttom"></buttom>
+        </div>
+    </form>
+  </div>
+</body>
+</html>
